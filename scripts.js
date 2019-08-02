@@ -65,7 +65,7 @@ function resetGame() {
 }
 
 function pad(val) {
-  var valString = val + '';
+  let valString = val + '';
   return (valString.length < 2 ? '0' + valString : valString);
 }
 
