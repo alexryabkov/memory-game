@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Memory Game</title>
+</head>
+
+<body>
+    <header>
+        <h1>Memory Game</h1>
+    </header>
+
+    <section class="score-panel">
+        <div class="moves-timer">
+            Time: <span id="minutes">00</span>:<span id="seconds">00</span>
+            | Move(s): <span id="moves">0</span>
+        </div>
+        <br>
+        <div>
+            <span class="game-finished">Done! Please press&nbsp;&nbsp;</span>
+            <span class="restart">
+                <i class="fa fa-repeat"></i>Restart game
+            </span>
+            <span class="game-finished">&nbsp;&nbsp;to start again</span>
+        </div>
+    </section>
+
+    <section class="memory-game-deck">
+        <div class="memory-card angular">
+            <img class="front-face" src="img/angular.png" alt="Angular" />
+            <img class="back-face" src="img/rhombus.png" alt="Rhombus" />
+        </div>
+        <div class="memory-card angular">
+            <img class="front-face" src="img/angular.png" alt="Angular" />
+            <img class="back-face" src="img/rhombus.png" alt="Rhombus" />
+        </div>
+        <div class="memory-card ember">
+            <img class="front-face" src="img/ember.png" alt="Ember" />
+            <img class="back-face" src="img/rhombus.png" alt="Rhombus" />
+        </div>
+        <div class="memory-card ember">
+            <img class="front-face" src="img/ember.png" alt="Ember" />
+            <img class="back-face" src="img/rhombus.png" alt="Rhombus" />
+        </div>
+        <div class="memory-card meteor">
+            <img class="front-face" src="img/meteor.png" alt="Meteor" />
+            <img class="back-face" src="img/rhombus.png" alt="Rhombus" />
+        </div>
+        <div class="memory-card meteor">
+            <img class="front-face" src="img/meteor.png" alt="Meteor" />
+            <img class="back-face" src="img/rhombus.png" alt="Rhombus" />
+        </div>
+        <div class="memory-card nodejs">
+            <img class="front-face" src="img/node.png" alt="NodeJS" />
+            <img class="back-face" src="img/rhombus.png" alt="Rhombus" />
+        </div>
+        <div class="memory-card nodejs">
+            <img class="front-face" src="img/node.png" alt="NodeJS" />
+            <img class="back-face" src="img/rhombus.png" alt="Rhombus" />
+        </div>
+        <div class="memory-card react">
+            <img class="front-face" src="img/react.png" alt="React" />
+            <img class="back-face" src="img/rhombus.png" alt="Rhombus" />
+        </div>
+        <div class="memory-card react">
+            <img class="front-face" src="img/react.png" alt="React" />
+            <img class="back-face" src="img/rhombus.png" alt="Rhombus" />
+        </div>
+        <div class="memory-card sails">
+            <img class="front-face" src="img/sails.png" alt="Sails" />
+            <img class="back-face" src="img/rhombus.png" alt="Rhombus" />
+        </div>
+        <div class="memory-card sails">
+            <img class="front-face" src="img/sails.png" alt="Sails" />
+            <img class="back-face" src="img/rhombus.png" alt="Rhombus" />
+        </div>
+        <div class="memory-card socketio">
+            <img class="front-face" src="img/socketio.png" alt="SocketIO" />
+            <img class="back-face" src="img/rhombus.png" alt="Rhombus" />
+        </div>
+        <div class="memory-card socketio">
+            <img class="front-face" src="img/socketio.png" alt="SocketIO" />
+            <img class="back-face" src="img/rhombus.png" alt="Rhombus" />
+        </div>
+        <div class="memory-card vue">
+            <img class="front-face" src="img/vue.png" alt="Vue" />
+            <img class="back-face" src="img/rhombus.png" alt="Rhombus" />
+        </div>
+        <div class="memory-card vue">
+            <img class="front-face" src="img/vue.png" alt="Vue" />
+            <img class="back-face" src="img/rhombus.png" alt="Rhombus" />
+        </div>
+
+    </section>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

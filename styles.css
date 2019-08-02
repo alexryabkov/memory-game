@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.1)),
+      color-stop(75%, rgba(17, 17, 17, 0.5)),
+      to(#111111)
+    ),
+    url("img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  flex-direction: column;
+}
+
+h1,
+.score-panel {
+  font-family: "Caveat", cursive;
+  text-align: center;
+  color: aliceblue;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.score-panel {
+  font-size: 2rem;
+}
+
+.restart {
+  display: inline-block;
+}
+
+.restart, .restart > i {
+  color: rgb(45, 61, 83);
+}
+
+.restart:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  transition: 0.2s ease;
+}
+
+.game-finished {
+  opacity: 0;
+}
+.game-finished.visible {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.memory-game-deck {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 5px solid black; */
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(25% - 10px);
+  margin: 5px;
+  position: relative;
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: 0.2s ease;
+}
+
+.memory-card:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.memory-card.hidden-card {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  background: #333333;
+  backface-visibility: hidden;
+}
